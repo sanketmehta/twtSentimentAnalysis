@@ -100,7 +100,7 @@ def getLatestRequests():
             d1_ts = time.mktime(d1.timetuple())
             d2_ts = time.mktime(d2.timetuple())
             time_diff = (int(d2_ts-d1_ts) / 60) 
-            if (myScreenName in twtText) and (("Analyze" in twtText) or ("analyze" in twtText)) and time_diff < 15:
+            if (myScreenName in twtText) and (("Analyze" in twtText) or ("analyze" in twtText)) and time_diff < 5:
                 userInfo = []
                 twt_id = tweetInfo["id"]
                 twted_user = "@"+tweetInfo['user']['screen_name']
